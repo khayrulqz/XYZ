@@ -7,7 +7,7 @@ import pandas as pd
 import streamlit as st
 
 # ---- Edit these ------------------------------------------------------------
-PRODUCT_NAME = "XYZ"   # <-- nijer indicator-er nam din
+PRODUCT_NAME = "XYZ INDICATOR"   # <-- nijer indicator-er nam din
 BUY_URL = "https://your-buy-link"
 CTA_TITLE = "Get the indicator"
 CTA_TEXT = "Automated setups and pending orders on TradingView."
@@ -27,7 +27,7 @@ FAQ = [
 LOW_SAMPLE_TRADES = 10  # pairs with fewer trades get a "Low sample" tag
 # ----------------------------------------------------------------------------
 
-st.set_page_config(page_title=f"{PRODUCT_NAME}: Backtest Summary", page_icon="📈", layout="wide")
+st.set_page_config(page_title=f"{PRODUCT_NAME}: 14 Years of Backtest Data:", page_icon="📈", layout="wide")
 S = json.loads((Path(__file__).parent / "public_snapshot.json").read_text(encoding="utf-8"))
 m, k = S["meta"], S["kpi"]
 
